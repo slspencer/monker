@@ -1,0 +1,96 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <meta name="Name of this page" content="author - S.L.Spencer" />
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,600;1,300&display=swap" rel="stylesheet"/>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <!-- jQuery-->
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Title Goes Here</title>
+  </head>
+
+
+  <html>
+    <body>
+        <!-- top bar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://getbootstrap.com/docs/3.3/examples/starter-template/#">Project name</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="https://getbootstrap.com/docs/3.3/examples/starter-template/#">Home</a></li>
+                        <li><a href="https://getbootstrap.com/docs/3.3/examples/starter-template/#about">About</a></li>
+                        <li><a href="https://getbootstrap.com/docs/3.3/examples/starter-template/#contact">Contact</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <!--end top bar -->
+
+        <!-- get user input-->
+        <div class="flex-row align-center justify-center min-100-vh bg-primary">
+            <div class="col-3 col-md-9 flex-column align-center bg-light p-5">
+
+                <h1 class="text-primary">Search for a City</h1>
+
+                <form id="search-form" class="form w-100">
+
+                    <input id="search-input" class="form-input w-100" type="text" placeholder="Search!">
+
+                    <select id="form-input" class="form-input w-100">
+                        <option value="maps">Austin</option>
+                        <option value="audio">Chicago</option>
+                        <option value="photos">New York</option>
+                        <option value="manuscripts">Orlando</option>
+                        <option value="newspapers">San Francisco</option>
+                        <option value="film-and-videos">Seattle</option>
+                        <option value="notated-music">Denver</option>
+                        <option value="websites">Atlanta</option>
+                    </select>
+
+                    <button class="btn btn-info btn-block">Search</button>
+
+                </form>  
+
+            </div>
+        </div>
+
+        <!--display results-->
+        <div class="col-12 col-md-8">
+        <h2 clas="subtitle">Showing Results for: <span id="library-search-term"></span></h2>
+
+        <!--dynamically update this container with search results-->
+        <div id="library-container" class="list-group"></div>
+    </div>
+    
+    
+    <!-- scripts go at the bottom of the page -->
+    <script rel="stylesheet" href="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
+    <script rel="stylesheet" href="./assets/js/script.js"></script>
+
+  </html>
+  
+
+
