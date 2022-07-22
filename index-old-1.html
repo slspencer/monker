@@ -31,23 +31,28 @@
 
         <!-- get user input-->
         <div class="flex-row align-center justify-center min-100-vh bg-primary">
-        
             <div class="col-3 col-md-9 flex-column align-center bg-light p-5">
-            
+
                 <h1 class="text-primary">Search for a City</h1>
 
-				<!-- get city -->
-                <form class="input-group mb-3" id="search-form" >
+                <form id="search-form" class="form w-100">
 
-                    <input class="form-control" id="search-city" type="text" placeholder="City">
+                    <input id="search-input" class="form-input w-100" type="text" placeholder="Search!">
 
-                    <div class="input-group-append">
-                    	<button class="btn btn-info btn-block" id="search-btn" type="submit">
-                    	    <i class="fa fa-search"></i>
-                    	</button>
-                    <div> <!--end input-group -->
+                    <select id="form-input" class="form-input w-100">
+                        <option value="maps">Austin</option>
+                        <option value="audio">Chicago</option>
+                        <option value="photos">New York</option>
+                        <option value="manuscripts">Orlando</option>
+                        <option value="newspapers">San Francisco</option>
+                        <option value="film-and-videos">Seattle</option>
+                        <option value="notated-music">Denver</option>
+                        <option value="websites">Atlanta</option>
+                    </select>
 
-                </form> <!-- end get city --> 
+                    <button class="btn btn-info btn-block">Search</button>
+
+                </form>  
 
             </div>
         </div>
