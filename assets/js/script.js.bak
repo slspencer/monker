@@ -23,9 +23,8 @@ function checkCity(event) {
     $("#search-city").val(""); //clear the city field //
 }
 
-//list that city's weather history from local storage
 function getStorage(city) {
-
+ 	//list that city's weather history from local storage
     var cityHistory = JSON.parse(localStorage.getItem("cityHistory"));
     
     // if cityHistory exists in local storage
@@ -41,7 +40,7 @@ function getStorage(city) {
         }
         
     } else {   	
-    	// hide empty weather history elements     
+    	// hide the empty weather history elements     
     }
 
 // get weather from openweathermap API
