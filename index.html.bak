@@ -7,7 +7,7 @@
     <meta name="Name of this page" content="author - S.L.Spencer" />
 
     <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,600;1,300&display=swap" rel="stylesheet"/>
     <!--Bootstrap-->
@@ -21,15 +21,28 @@
 
   <html>
     <body>
-    	<header>
-        <!-- nav bar -->
-	        <nav class="navbar navbar-inverse navbar-fixed-top">
-	            <div class="container">
-	                <span class="navbar-brand w-100">Weather Dashboard</span>
-	            </div>           
-	        </nav>
-	        <!--end nav bar -->
-        </header>
+        <!-- top bar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://getbootstrap.com/docs/3.3/examples/starter-template/#">Project name</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="https://getbootstrap.com/docs/3.3/examples/starter-template/#">Home</a></li>
+                        <li><a href="https://getbootstrap.com/docs/3.3/examples/starter-template/#about">About</a></li>
+                        <li><a href="https://getbootstrap.com/docs/3.3/examples/starter-template/#contact">Contact</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <!--end top bar -->
 
         <!-- get user input-->
         <div class="flex-row align-center justify-center min-100-vh bg-primary">
