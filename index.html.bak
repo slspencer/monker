@@ -45,12 +45,12 @@
                     	<button class="btn btn-info btn-block" id="search-btn" type="submit">
                     	    <i class="fa fa-search"></i>
                     	</button>
-                    <div> <!--end input-group -->
+                    <div>
 
                 </form> <!-- end get city --> 
 
-            </div>
-        </div>
+            </div> <!-- end col-3 -->
+        </div> <!-- end flex row -->
 
         <!--display results-->
         <div class="col-12 col-md-8">
